@@ -123,6 +123,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     window=Ui_MainWindow()
+    window.setWindowIcon(QtGui.QIcon("logo.png"))
     #window.showMaximized()
     window.showFullScreen()
     app.exec_()
