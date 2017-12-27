@@ -33,7 +33,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.horizontalLayout.setObjectName("horizontalLayout")
 
         font = QtGui.QFont()
-        font.setPointSize(200)
+        font.setPointSize(400)
         font.setBold(True)
 
         self.Chung = QtWidgets.QLabel(self.horizontalLayoutWidget)
