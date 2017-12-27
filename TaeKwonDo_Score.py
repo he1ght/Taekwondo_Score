@@ -12,7 +12,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super(Ui_MainWindow, self).__init__(parent)
 
-        AssertMsg = QtWidgets.QMessageBox.question(self, '버튼 조작', '좌 - 청 1점 증가\n우 - 홍 1점 증가\n상 - 리셋\n하 - 직전 행동 되돌리기', QtWidgets.QMessageBox.Yes)
+        AssertMsg = QtWidgets.QMessageBox.question(self, '버튼 조작', '좌 - 홍 1점 증가\n우 - 청 1점 증가\n상 - 리셋\n하 - 직전 행동 되돌리기', QtWidgets.QMessageBox.Yes)
 
         self.blue_score = 0
         self.red_score = 0
@@ -40,7 +40,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.Chung.setFont(font)
         self.Chung.setAlignment(QtCore.Qt.AlignCenter)
         self.Chung.setObjectName("Chung")
-        self.Chung.setStyleSheet("""QLabel { background-color: blue; color: white }""")
+        self.Chung.setStyleSheet("""QLabel { background-color: red; color: white }""")
         self.Chung.setText(str(self.blue_score))
         self.horizontalLayout.addWidget(self.Chung)
 
@@ -49,7 +49,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.Hong.setAlignment(QtCore.Qt.AlignCenter)
         self.Hong.setTextFormat(QtCore.Qt.AutoText)
         self.Hong.setObjectName("Hong")
-        self.Hong.setStyleSheet("""QLabel { background-color: red; color: white }""")
+        self.Hong.setStyleSheet("""QLabel { background-color: blue; color: white }""")
         self.Hong.setText(str(self.red_score))
         self.horizontalLayout.addWidget(self.Hong)
 
